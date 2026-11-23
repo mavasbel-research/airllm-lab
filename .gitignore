@@ -1,0 +1,9 @@
+.venv/
+__pycache__/
+*.safetensors
+splitted_model/
+airllm-shards/
+.coverage
+.pytest_cache/
+notebooks/executed/
+.ipynb_checkpoints/

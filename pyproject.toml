@@ -1,0 +1,35 @@
+[project]
+name = "airllm-lab"
+version = "0.1.0"
+description = "Exhaustive AirLLM lab: benchmarks, thin wrapper, notebooks"
+readme = "README.md"
+requires-python = ">=3.13"
+dependencies = [
+    "airllm==4.0.1",
+    "torch>=2.4",
+    "transformers>=4.49,<6",
+    "accelerate>=1.0",
+    "safetensors",
+    "huggingface-hub",
+    "scipy",
+    "sentencepiece",
+    "jupytext>=1.16",
+    "papermill>=2.6",
+    "ipykernel>=6.29",
+]
+
+[project.optional-dependencies]
+dev = []
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[tool.uv]
+managed = true
+
+[tool.jupytext]
+formats = "notebooks//ipynb,notebooks//py:percent"
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/airllm_lab"]
