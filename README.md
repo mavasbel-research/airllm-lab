@@ -1,7 +1,6 @@
 # airllm-lab
 
-Exhaustive AirLLM lab: benchmarks → framework → lab, on this macOS host.
-Plan: `/Users/mavasbel/Dev/repos/docs/plans/2026-11-23-15-27-airllm-exhaustive-lab-plan.md`.
+Exhaustive AirLLM lab: benchmarks → framework → lab on macOS with MLX.
 
 ## Prerequisites
 
@@ -25,7 +24,6 @@ Plan: `/Users/mavasbel/Dev/repos/docs/plans/2026-11-23-15-27-airllm-exhaustive-l
 ## Install
 
 ```bash
-cd /Users/mavasbel/Dev/repos/research/airllm-lab
 uv sync --frozen        # creates local .venv (uv-managed; never pip install / sudo)
 ```
 
@@ -122,9 +120,6 @@ Zero knobs UNVERIFIED — all seven read verbatim from source at the pinned SHA.
 The wrapper default is `device="cpu"` (explicit CPU keeps a CPU-only host off
 the incidental `cuda:0` path).
 
-## Design docs
+## References
 
-- Product tree: `/Users/mavasbel/Dev/repos/docs/design/2026-11-23-15-27-airllm-product-tree.md`
-- Architecture tree: `/Users/mavasbel/Dev/repos/docs/design/2026-11-23-15-27-airllm-architecture-tree.md`
-- Benchmark evidence: `/Users/mavasbel/Dev/repos/docs/research/2026-11-23-15-27-airllm-benchmarks.md`
 - Upstream source: `https://github.com/lyogavin/airllm`
